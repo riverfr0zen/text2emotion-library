@@ -18205,7 +18205,7 @@ def get_emotion(input):
                     emotions[df["Emotion"][a]] += 1
             except:
                 pass
-        if sum(emotions.values()) is 0:
+        if sum(emotions.values()) == 0:
             return emotions
         for i in emotions:
             emotion_values.append(round((emotions[i] / sum(emotions.values())), 2))
